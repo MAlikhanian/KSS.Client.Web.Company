@@ -1,0 +1,70 @@
+{
+  "title": "Create Company — Guide",
+  "subtitle": "A read-only training walkthrough with sample data and field explanations",
+  "entry": {
+    "button": "Visual guide",
+    "backToPage": "Back to Create Company"
+  },
+  "demoBanner": "Training mode — the data on this page is sample data shown for demonstration only. This form saves nothing and every control is disabled.",
+  "labels": {
+    "guide": "Guide",
+    "whatIs": "What is this section?",
+    "howTo": "How do I fill it in?",
+    "tips": "Tips",
+    "demoData": "Sample data (display only)",
+    "realControlNote": "The real control for this section is shown below, in read-only mode."
+  },
+  "quickStart": {
+    "title": "What does this page do?",
+    "intro": "The «Create Company» page registers a new company:",
+    "steps": [
+      "You enter the company's basic info: Persian name, registration date, registration number, national ID, place of registration (country/province/city) and economic code.",
+      "Pressing «Create Company» creates the company record.",
+      "After creation you are taken automatically to «Company Information» with that company selected, to complete the rest of the profile (contacts, stakeholders, …).",
+      "This page only captures basic info; the other sections are completed later in «Company Information»."
+    ]
+  },
+  "sections": {
+    "basicInfo": {
+      "title": "Basic information",
+      "intro": "The only section on this page. It captures the minimum needed to create the company; the rest of the profile is completed afterward in «Company Information».",
+      "steps": [
+        "Enter the «Company name (Persian)».",
+        "Pick the registration date from the calendar and enter the registration number.",
+        "Enter the national ID and economic code.",
+        "Choose the place of registration in cascading order: country → province → city.",
+        "Click «Create Company»."
+      ],
+      "tips": [
+        "Country/province/city selection is cascading; pick the country first to enable the province, then the city.",
+        "Final validation happens on the server; an error message is shown if something is missing."
+      ]
+    },
+    "operations": {
+      "title": "Create the company",
+      "intro": "At the end of the form is the «Create Company» button which creates the company and redirects you to the company information page.",
+      "steps": [],
+      "tips": [
+        "In this training sample the button is disabled and nothing is saved.",
+        "In the real form the button is disabled while processing to prevent a double submit."
+      ]
+    }
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "q": "What happens after I create the company?",
+        "a": "You're taken automatically to «Company Information» with that company selected, to complete the other sections (emails, phones, addresses, stakeholders, …)."
+      },
+      {
+        "q": "Why do I only see «Basic information»?",
+        "a": "This page intentionally captures only the minimum needed to create the company; the rest of the profile is completed in «Company Information» afterward."
+      },
+      {
+        "q": "The province/city list is empty; what do I do?",
+        "a": "Pick the country first so the province loads, then pick the province so the city loads."
+      }
+    ]
+  }
+}

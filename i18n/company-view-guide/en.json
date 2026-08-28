@@ -1,0 +1,114 @@
+{
+  "title": "Company View — Guide",
+  "subtitle": "A read-only training walkthrough with sample data and an explanation of every section",
+  "entry": {
+    "button": "Visual guide",
+    "backToPage": "Back to Company View"
+  },
+  "demoBanner": "Training mode — all data on this page is sample data shown for demonstration only. This guide is the read-only «Company View», where everything is locked.",
+  "labels": {
+    "guide": "Guide",
+    "whatIs": "What is this section?",
+    "howTo": "What do I see?",
+    "tips": "Tips",
+    "demoData": "Sample data (display only)",
+    "realControlNote": "The real control for this section is shown below, in read-only mode."
+  },
+  "quickStart": {
+    "title": "What does this page do?",
+    "intro": "The «Company View» page is a fully read-only view of a company's information:",
+    "steps": [
+      "First a company is selected; until then nothing is shown.",
+      "After selecting, the same sections as «Company Information» appear: name history, registration & legal, emails, phones, addresses and stakeholders.",
+      "But everything is locked: there are no add/edit/delete buttons and no «Update» button.",
+      "To change data, go to the «Company Information» (edit) page; this page is for viewing only.",
+      "The side cardex shows a summary of the company profile status."
+    ]
+  },
+  "sections": {
+    "selection": {
+      "title": "Select company",
+      "intro": "The card at the top used to pick the company to view. Until one is selected, no section is shown.",
+      "steps": [],
+      "tips": [
+        "This is only for selecting a company; no editing happens on the selection itself.",
+        "The selection persists between visits."
+      ]
+    },
+    "nameHistory": {
+      "title": "Name history",
+      "intro": "The company's names over time with translations (Persian/Latin), start/end dates and the «current» flag. View-only here.",
+      "steps": [],
+      "tips": [
+        "A row with no end date is the company's current name.",
+        "Add/edit/delete buttons are not shown in this view."
+      ]
+    },
+    "registrationLegal": {
+      "title": "Registration & legal",
+      "intro": "Registration data: dates and number, place of registration (country/province/city), national ID and economic code. All fields are disabled.",
+      "steps": [],
+      "tips": [
+        "In the real view these fields are read-only and there is no «Update Company» button."
+      ]
+    },
+    "emails": {
+      "title": "Emails",
+      "intro": "The company's emails with label, address, and the «primary»/«verified» flags — view only.",
+      "steps": [],
+      "tips": [
+        "«Primary» shows a yellow star and «verified» a green check."
+      ]
+    },
+    "phones": {
+      "title": "Phones",
+      "intro": "The company's phone numbers with label, number (E.164) and «primary»/«verified» flags — view only.",
+      "steps": [],
+      "tips": [
+        "Numbers are shown in international format (+ and country code)."
+      ]
+    },
+    "addresses": {
+      "title": "Addresses",
+      "intro": "The company's addresses with label, location (country/province/city), street, postal code and «primary» flag — view only.",
+      "steps": [],
+      "tips": [
+        "A 10-digit postal code is shown as 5-5."
+      ]
+    },
+    "stakeholders": {
+      "title": "Stakeholders",
+      "intro": "People/companies with an ownership relationship, with stakeholder type, ownership %, share count and dates — view only.",
+      "steps": [],
+      "tips": [
+        "Use the arrow at the start of a row to see each stakeholder's history.",
+        "In this training sample the related-party name shows as «unknown» because it is not connected to real data."
+      ]
+    },
+    "sidebar": {
+      "title": "Cardex (profile overview)",
+      "intro": "The side panel showing a summary of the company profile (completion rate, verified info, last update).",
+      "steps": [],
+      "tips": [
+        "This panel is purely informational and is shown in the view too."
+      ]
+    }
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "q": "How is this different from «Company Information»?",
+        "a": "The content is the same, but «Company View» is fully read-only: no add/edit/delete and no update button. To change data, use the «Company Information» page."
+      },
+      {
+        "q": "Why can't I see any section?",
+        "a": "Because you haven't selected a company yet. Select one from the card at the top first."
+      },
+      {
+        "q": "Why can't I edit anything?",
+        "a": "This page is for viewing; all controls are intentionally disabled. Editing happens on the «Company Information» page."
+      }
+    ]
+  }
+}
