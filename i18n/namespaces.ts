@@ -4,6 +4,8 @@
 // Lists only the namespaces this project owns. Adding a namespace means
 // adding the folder under i18n\ and re-running the sync.
 
+import faBrokeragesCommon from '@/i18n/brokerages-common/fa.json';
+import enBrokeragesCommon from '@/i18n/brokerages-common/en.json';
 import faCompanyAccess from '@/i18n/company-access/fa.json';
 import enCompanyAccess from '@/i18n/company-access/en.json';
 import faCompanyAccessGuide from '@/i18n/company-access-guide/fa.json';
@@ -18,9 +20,40 @@ import faCompanyInformationGuide from '@/i18n/company-information-guide/fa.json'
 import enCompanyInformationGuide from '@/i18n/company-information-guide/en.json';
 import faCompanyViewGuide from '@/i18n/company-view-guide/fa.json';
 import enCompanyViewGuide from '@/i18n/company-view-guide/en.json';
+import faPersonAccess from '@/i18n/person-access/fa.json';
+import enPersonAccess from '@/i18n/person-access/en.json';
+import faPersonAddress from '@/i18n/person-address/fa.json';
+import enPersonAddress from '@/i18n/person-address/en.json';
+import faPersonAsset from '@/i18n/person-asset/fa.json';
+import enPersonAsset from '@/i18n/person-asset/en.json';
+import faPersonContact from '@/i18n/person-contact/fa.json';
+import enPersonContact from '@/i18n/person-contact/en.json';
+import faPersonDocument from '@/i18n/person-document/fa.json';
+import enPersonDocument from '@/i18n/person-document/en.json';
+import faPersonEducation from '@/i18n/person-education/fa.json';
+import enPersonEducation from '@/i18n/person-education/en.json';
+import faPersonEmployment from '@/i18n/person-employment/fa.json';
+import enPersonEmployment from '@/i18n/person-employment/en.json';
+import faPersonForm from '@/i18n/person-form/fa.json';
+import enPersonForm from '@/i18n/person-form/en.json';
+import faPersonNameGrid from '@/i18n/person-name-grid/fa.json';
+import enPersonNameGrid from '@/i18n/person-name-grid/en.json';
+import faPersonNationality from '@/i18n/person-nationality/fa.json';
+import enPersonNationality from '@/i18n/person-nationality/en.json';
+import faPersonProfessionalTraining from '@/i18n/person-professional-training/fa.json';
+import enPersonProfessionalTraining from '@/i18n/person-professional-training/en.json';
+import faPersonRelationship from '@/i18n/person-relationship/fa.json';
+import enPersonRelationship from '@/i18n/person-relationship/en.json';
+import faPersonSearch from '@/i18n/person-search/fa.json';
+import enPersonSearch from '@/i18n/person-search/en.json';
+import faPersonSidebar from '@/i18n/person-sidebar/fa.json';
+import enPersonSidebar from '@/i18n/person-sidebar/en.json';
+import faPersonStatus from '@/i18n/person-status/fa.json';
+import enPersonStatus from '@/i18n/person-status/en.json';
 
 export const DOMAIN_NAMESPACES = {
   fa: {
+  'brokerages-common': faBrokeragesCommon,
   'company-access': faCompanyAccess,
   'company-access-guide': faCompanyAccessGuide,
   'company-create-guide': faCompanyCreateGuide,
@@ -28,8 +61,24 @@ export const DOMAIN_NAMESPACES = {
   'company-information': faCompanyInformation,
   'company-information-guide': faCompanyInformationGuide,
   'company-view-guide': faCompanyViewGuide,
+  'person-access': faPersonAccess,
+  'person-address': faPersonAddress,
+  'person-asset': faPersonAsset,
+  'person-contact': faPersonContact,
+  'person-document': faPersonDocument,
+  'person-education': faPersonEducation,
+  'person-employment': faPersonEmployment,
+  'person-form': faPersonForm,
+  'person-name-grid': faPersonNameGrid,
+  'person-nationality': faPersonNationality,
+  'person-professional-training': faPersonProfessionalTraining,
+  'person-relationship': faPersonRelationship,
+  'person-search': faPersonSearch,
+  'person-sidebar': faPersonSidebar,
+  'person-status': faPersonStatus,
   },
   en: {
+  'brokerages-common': enBrokeragesCommon,
   'company-access': enCompanyAccess,
   'company-access-guide': enCompanyAccessGuide,
   'company-create-guide': enCompanyCreateGuide,
@@ -37,5 +86,20 @@ export const DOMAIN_NAMESPACES = {
   'company-information': enCompanyInformation,
   'company-information-guide': enCompanyInformationGuide,
   'company-view-guide': enCompanyViewGuide,
+  'person-access': enPersonAccess,
+  'person-address': enPersonAddress,
+  'person-asset': enPersonAsset,
+  'person-contact': enPersonContact,
+  'person-document': enPersonDocument,
+  'person-education': enPersonEducation,
+  'person-employment': enPersonEmployment,
+  'person-form': enPersonForm,
+  'person-name-grid': enPersonNameGrid,
+  'person-nationality': enPersonNationality,
+  'person-professional-training': enPersonProfessionalTraining,
+  'person-relationship': enPersonRelationship,
+  'person-search': enPersonSearch,
+  'person-sidebar': enPersonSidebar,
+  'person-status': enPersonStatus,
   },
 } as const;
