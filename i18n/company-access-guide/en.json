@@ -1,0 +1,82 @@
+{
+  "title": "Company Access Management — Guide",
+  "subtitle": "A read-only training walkthrough with sample data and an explanation of every section",
+  "entry": {
+    "button": "Visual guide",
+    "backToPage": "Back to Access Management"
+  },
+  "demoBanner": "Training mode — all data on this page is sample data shown for demonstration only. Nothing is saved or changed here and every control is read-only.",
+  "labels": {
+    "guide": "Guide",
+    "whatIs": "What is this section?",
+    "howTo": "How do I use it?",
+    "tips": "Tips",
+    "demoData": "Sample data (display only)",
+    "realControlNote": "The real control for this section is shown below, in read-only mode."
+  },
+  "quickStart": {
+    "title": "What does this page do?",
+    "intro": "The «Company Access Management» page lets an owner/admin decide who can access a company's information:",
+    "steps": [
+      "First a company is selected; until then the access tables are not shown.",
+      "In «Access Management» you grant access to people, and in «Role Access» to roles (specific to this company or global).",
+      "Each grant sets two levels: «Company Information» and «Access» — each can be «None», «View» or «Edit».",
+      "If you only have view access yourself, the page title turns red and the controls are disabled."
+    ]
+  },
+  "sections": {
+    "selection": {
+      "title": "Select company",
+      "intro": "The card at the top used to pick the company whose access you want to manage. Until one is selected, the access tables are hidden.",
+      "steps": [],
+      "tips": [
+        "The selection persists between visits.",
+        "You can only grant access on companies where your own access level is «Edit»."
+      ]
+    },
+    "accessManagement": {
+      "title": "Access management (people)",
+      "intro": "The person-access table. Each person gets two levels: a «Company Information» level and an «Access» level. Each can be «None», «View» or «Edit».",
+      "steps": [
+        "To add, click «Add» and search for and select the person.",
+        "Choose the «Company Information» level and the «Access» level from the dropdowns.",
+        "Click «Save»; the new row is added to the table.",
+        "Use the pencil/trash icons to edit or remove a row."
+      ],
+      "tips": [
+        "The «Information» column is the level for viewing/editing the company profile; the «Access» column is the level for managing this access page itself.",
+        "If your access is «View», the add/edit/delete buttons are not shown."
+      ]
+    },
+    "roleAccess": {
+      "title": "Role access",
+      "intro": "The role-access table. You can grant a level to a role (instead of a single person). Each row has a «scope»: «This company» or «Global» (applies to all companies).",
+      "steps": [
+        "To add, click «Add», pick a role and set the «scope» (this company / global).",
+        "Choose the «Information» and «Access» levels and click «Save».",
+        "Edit/delete from the icons on the same row."
+      ],
+      "tips": [
+        "A «Global» scope row affects all companies, not just the current one.",
+        "When editing, the row's scope is locked and can't be changed."
+      ]
+    }
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "q": "What's the difference between the «Information» and «Access» levels?",
+        "a": "«Information» decides whether the grantee can view/edit the company profile; «Access» decides whether they can view/manage this access-management page itself."
+      },
+      {
+        "q": "What's the difference between «person access» and «role access»?",
+        "a": "The first grants access to a specific person; the second to a role (e.g. «Analyst»), covering every user with that role. Roles can also be «global»."
+      },
+      {
+        "q": "Why don't I see the add/edit buttons?",
+        "a": "Either you haven't selected a company, or your access level on this company is only «View». In view mode the write buttons are hidden."
+      }
+    ]
+  }
+}
