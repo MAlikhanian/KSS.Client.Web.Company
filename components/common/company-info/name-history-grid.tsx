@@ -120,12 +120,20 @@ export function NameHistoryGrid({ nameHistory, onAdd, onEdit, onDelete, onDelete
   // ──────────────────────────────────────────────
   // Helpers
   // ──────────────────────────────────────────────
+  // A company may be recorded in one language only (Persian-only or Latin-only), so fall
+  // back through the UI language, the service-provided name, Persian, Latin, then any
+  // non-empty translation. The row must never render blank.
   const getDisplayName = (item: NameHistoryItem): string => {
-    if (item.translations && item.translations.length > 0) {
-      const tr = item.translations.find((t) => t.languageId === displayLanguageId);
-      if (tr) return tr.name;
-    }
-    return item.name;
+    const translations = (item.translations ?? []).filter((t) => t.name?.trim());
+    const byLanguage = (languageId: number) => translations.find((t) => t.languageId === languageId)?.name;
+    return (
+      byLanguage(displayLanguageId) ??
+      (item.name?.trim() ? item.name : undefined) ??
+      byLanguage(12) ??
+      byLanguage(10) ??
+      translations[0]?.name ??
+      ''
+    );
   };
 
   const getLanguageName = (langId: number): string => {

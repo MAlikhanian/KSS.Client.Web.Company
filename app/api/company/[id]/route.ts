@@ -46,10 +46,15 @@ export async function GET(
               name: t.name,
             })),
           };
-        } catch {
+        } catch (error: unknown) {
+          // nh.name is a display name whose language is not known here, so no language is
+          // assumed for it. The entry keeps its display name with no translations; a later
+          // save of this entry is then refused by the name-history route (translations are
+          // required) instead of writing the name under the wrong language.
+          console.error('Failed to load name-history translations:', nh.id, error);
           return {
             ...nh,
-            translations: [{ languageId: 12, name: nh.name }],
+            translations: [],
           };
         }
       }),
